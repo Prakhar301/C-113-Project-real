@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Intro to p5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <style>
+            body{
+                background-color: rgba(200, 50, 100, 100);
+            }
+            canvas{
+                border: 8px lightsalmon ;
+                border-style:groove;
+                animation-name: animat;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes animat{
+                0%{
+                    background-color:rgb(255,255,255);
+                }
+                10%{
+                    background-color:rgb(255, 240, 100);
+                }
+                20%{
+                    background-color: rgb(255, 150, 75) ;
+                }
+                30%{
+                    background-color: rgb(255, 75, 0);
+                }
+                40%{
+                    background-color: rgb(255,20,20);
+                }
+                50%{
+                    background-color:rgb(150, 20, 20) ;
+                }
+                60%{
+                    background-color:rgb(75, 10, 10) ;
+                }
+                70%{
+                    background-color: rgb(30,5,5);
+                }
+                80%{
+                    background-color: rgb(80,80,80);
+                }
+                90%{
+                    background-color: rgb(160, 160, 160);
+                }                
+                100%{ 
+                    background-color:rgb(240,240,240);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h1 id="hone" class="btn btn-primary">First p5.js Project</h1>  
+                <br><br>
+                <button onclick="snap();" class="btn btn-success">Take Snapshot</button>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
